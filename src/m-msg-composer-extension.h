@@ -21,8 +21,6 @@
 #include <libebackend/libebackend.h>
 #include <gtk/gtk.h>
 
-#include "e-webkit-editor.h"
-
 /* Standard GObject macros */
 #define M_TYPE_MSG_COMPOSER_EXTENSION \
 	(m_msg_composer_extension_get_type ())
@@ -60,8 +58,8 @@ struct _MMsgComposerExtensionClass
 	EExtensionClass parent;
 };
 
-GType	m_msg_composer_extension_get_type	(void);
-void	m_msg_composer_extension_type_register	(GTypeModule *type_module);
+GType m_msg_composer_extension_get_type (void);
+void m_msg_composer_extension_type_register (GTypeModule *type_module);
 
 G_END_DECLS
 

@@ -25,7 +25,5 @@ target_link_libraries(module-composer-rtl
 )
 
 install(TARGETS module-composer-rtl
-	DESTINATION ${EVOLUTION_MODULE_DIR}
+	LIBRARY DESTINATION ${EVOLUTION_MODULE_DIR}
 )
-
-include_directories(/home/mehdi/src/gnome/evolution/src/modules/webkit-editor/)
